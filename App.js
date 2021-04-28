@@ -1,8 +1,8 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import HomeScreen from "./screens/home";
-import SearchScreen from "./screens/search";
+import HomeTab from "./tabs/home";
+import SearchTab from "./tabs/search";
 import { Ionicons } from "@expo/vector-icons";
 
 const Tab = createBottomTabNavigator();
@@ -30,8 +30,8 @@ export default function App() {
           labelPosition: "below-icon",
         }}
       >
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Search" component={SearchScreen} />
+        <Tab.Screen name="Home" component={HomeTab} />
+        <Tab.Screen name="Search" component={SearchTab} />
       </Tab.Navigator>
     </NavigationContainer>
   );
