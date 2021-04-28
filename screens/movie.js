@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { API_BASE_URL } from "@env";
-import { ActivityIndicator, View, Text, FlatList } from "react-native";
+import { ActivityIndicator, View, Text } from "react-native";
 import { Tile } from "react-native-elements";
 
 function MovieScreen({ route }) {
